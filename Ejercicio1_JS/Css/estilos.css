@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    width: 100vw ;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 10% 40%;
+    grid-template-rows: 80px 80px auto 100px;
+    grid-template-areas: "h h h h"
+    "s1 s1 s1 s2"
+    "s1 s1 s1 s2"
+    "s1 s1 s1 s2";
+}
+
+header{
+    background-color: #03410d80;
+    grid-area: h;
+}
+#section1{
+    background-color: #ffffff;
+    grid-area: s1;
+}
+
+#section2{
+    background-color: #03410d80;
+    grid-area: s2;
+    
+
+}
+#registro {
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+label {
+    overflow: hidden;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 15px;
+}
+
+#estudiantes{
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    width: -webkit-fill-available;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+}
+.txt{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ;
+}
+
